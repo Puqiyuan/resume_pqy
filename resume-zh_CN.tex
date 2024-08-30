@@ -46,7 +46,7 @@
   \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{龙芯中科} 北京}{2021年3月 -- 至今}
+\datedsubsection{\textbf{龙芯中科} 北京}{2021年3月 -- 2023年3月}
 \role{内核开发工程师}{}
 \begin{onehalfspacing}
 负责LoongArch服务器内核性能、稳定问题解决。内核新feature开发。固件ACPI表调试等。
@@ -64,6 +64,26 @@
   \item 调试ACPI表操作硬件。
   \item 实现可信安全功能。
 \end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{EasyStack} 成都}{2023年3月 -- 至今}
+\role{内核开发工程师}{}
+\begin{onehalfspacing}
+  负责处理各种内核crash vmcore故障。负责systemd udevd等系统守护进程问题排查。负责上游补丁
+  backport，内核维护。
+  \begin{itemize}
+  \item 修复rq lock引起的系统夯死（AA死锁）。
+  \item 排查国产CPU核级bug引起的核卡死（不响应NMI）。
+  \item 分析Intel CPU核级bug引起cpu访问虚拟地址bit跳变。
+  \item 走读分析内核qspinlock代码。
+  \item 修复vhost模块里的bug导致内存踩踏，进而引起内核crash.
+  \item 解决系统多个进程相互卡死问题。
+  \item 分析systemd代码，一个unit的加载，添加，执行过程。以排查boot.mount这个unit被较低概
+    率随机删除后，引起boot分区消失。
+  \item 其它一些各种各样的内核问题。对内核故障排查具有较为丰富的经验，熟练使用crash分析
+    vmcore，反汇编/汇编分析，推内核栈等基本就是日常工作。由于处理各种类型内核的故障，而故
+    障来自内核任意模块，对于之前未接触过的模块，同样能快速分析走读代码以最后解决问题。
+  \end{itemize}
 \end{onehalfspacing}
 
 % Reference Test
