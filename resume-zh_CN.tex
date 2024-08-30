@@ -73,7 +73,7 @@
   backport，内核维护。
   \begin{itemize}
   \item 修复rq lock引起的系统夯死（AA死锁）。
-  \item 排查国产CPU核级bug引起的核卡死（不响应NMI）。
+  \item 排查国产CPU核级bug引起的核卡死（不响应IPI）。
   \item 分析Intel CPU核级bug引起cpu访问虚拟地址bit跳变。
   \item 走读分析内核qspinlock代码。
   \item 修复vhost模块里的bug导致内存踩踏，进而引起内核crash.
