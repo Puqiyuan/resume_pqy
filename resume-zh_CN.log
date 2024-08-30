@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex 2024.7.23)  23 JUL 2024 18:58
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex 2024.8.2)  30 AUG 2024 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -677,7 +677,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\FA' on input line 108.
+(hyperref)                removing `\FA' on input line 109.
 
 
 
@@ -691,7 +691,7 @@ Package rerunfilecheck Info: File `resume-zh_CN.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  15358 strings out of 475804
- 320571 string characters out of 5776099
+ 320571 string characters out of 5776100
  1954557 words of memory out of 5000000
  37739 multiletter control sequences out of 15000+600000
  559275 words of font info for 75 fonts, out of 8000000 for 9000
