@@ -1,0 +1,119 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Qiyuan Pu}
+
+\basicInfo{
+  \email{pqy7172@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 183-145-55392}
+  }
+ 
+\section{\faGraduationCap\ Educational Background}
+\datedsubsection{\textbf{Southwest Forestry University}, Kunming, Yunnan}{2014 -- 2018}
+\textit{Bachelor}\ Computer Science and Technology
+
+\section{\faUsers\ Work Experience}
+\datedsubsection{\textbf{NSFOCUS} Chengdu}{2018-6 -- 2020-3}
+\role{Kernel Development Engineer}{}
+\begin{onehalfspacing}
+  Responsible for porting the DPI (Deep Packet Inspection) framework to domestic platforms such as Shenwei, Phytium, and Loongson. Also responsible for addressing Linux kernel issues.
+  \begin{itemize}
+  \item Developed assembly code to port DPI software to platforms such as Shenwei, Phytium, and Loongson.
+  \item Handled kernel crash issues.
+  \item Ported security department's Python code to C and optimized it to improve performance.
+  \end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{UnionTech} Chengdu}{2020-3 -- 2021-3}
+\role{Kernel Development Engineer}{}
+\begin{onehalfspacing}
+  Responsible for addressing Linux kernel issues. Ported the Golang compiler to Shenwei and LoongArch platforms.
+  \begin{itemize}
+  \item Handled various issues exposed during kernel testing using the LTP (Linux Test Project) test suite, involving analysis of different kernel modules.
+  \item Collaborated with Shenwei and Loongson to port the Golang compiler.
+  \end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{Loongson} Beijing}{2021-3 -- 2023-3}
+\role{Kernel Development Engineer}{}
+\begin{onehalfspacing}
+Responsible for resolving kernel performance and stability issues on LoongArch servers, developing new kernel features, and debugging firmware ACPI tables.
+\begin{itemize}
+  \item Fixed issues exposed during kernel testing with various test suites, such as LTP and LTPstress.
+  \item Fixed kernel dirty page loss issues caused by improper pte flag operations in the mm module.
+  \item Refactored the pte flag attribute operation interface on the LoongArch platform.
+  \item Analyzed the impact of various I/O schedulers on desktop system interactivity.
+  \item Troubleshot hardware issues with the chipset that caused the NVMe driver to report I/O timeouts.
+  \item Fixed the crash issue caused by PCI scan scanning all spaces.
+  \item Optimized UnixBench performance on the LoongArch server platform and wrote over 300 lines of kernel common code.
+  \item Analyzed the kernel network protocol stack and resolved customer network latency issues.
+  \item Optimized file operation performance, benchmarking against the Kunpeng 920.
+  \item Developed kernel test automation bash scripts to improve efficiency.
+  \item Debugged ACPI table operations on hardware.
+  \end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{EasyStack} Chengdu}{2023-3 -- Present}
+\role{Kernel Development Engineer}{}
+\begin{onehalfspacing}
+  Responsible for handling various kernel crash and vmcore issues. Troubleshot systemd, udevd, and other system daemon problems. Managed upstream patch backporting and kernel maintenance.
+  \begin{itemize}
+  \item Fixed system deadlock (AA deadlock) caused by rq lock.
+  \item Troubleshot CPU core-level bugs in domestic CPUs that caused core hang (non-responsive to IPI).
+  \item Analyzed Intel CPU core-level bugs that caused bit flipping in CPU access to virtual addresses.
+  \item Conducted a walk-through analysis of the kernel's qspinlock code.
+  \item Fixed a bug in the vhost module that caused memory corruption, leading to kernel crashes.
+  \item Resolved the issue of multiple processes deadlocking each other in the system.
+  \item Analyzed the systemd code to understand the process of loading, adding, and executing a unit. This was done to troubleshoot the issue where the boot.mount unit was randomly deleted at a lower priority, causing the boot partition to disappear.
+  \item Conducted a walk-through of the QEMU/KVM virtual machine live migration code, and optimized parameters to improve virtual machine migration performance.
+  \item Handled various kernel issues and gained extensive experience in kernel troubleshooting. Proficient in using crash to analyze vmcore dumps, disassembling/assembling code, and debugging the kernel with tools like kprobe and stap scripts. Kernel stack tracing and related tasks are part of the daily routine. Due to the wide range of kernel faults encountered, which can originate from any kernel module, I am able to quickly analyze and walk through unfamiliar modules' code to resolve issues effectively.
+  \end{itemize}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+%\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+%\begin{itemize}[parsep=0.5ex]
+%  \item 编程语言: C == Python > C++ > Java
+%  \item 平台: Linux
+%  \item 开发: xxx
+%\end{itemize}
+
+%\section{\faHeartO\ 获奖情况}
+%\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
+%\datedline{其他奖项}{2015}
+
+\section{\faInfo\ Others}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item School-level "Excellent Student" for the 2014-2015 academic year.
+  \item School-level "Excellent Student" for the 2015-2016 academic year.
+  \item Outstanding Graduate.
+  \item Outstanding Graduation Thesis: Implementation of a Simple Operating System.
+  \item Second Prize in the 2018 Yunnan Province University Student Computer Works Competition.
+  \item Fluent in English reading, with a CET-6 level certification. Holds a patent for "A Method, Device, Electronic Equipment, and Process for Process Access."
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
